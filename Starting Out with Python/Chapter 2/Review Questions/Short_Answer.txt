@@ -1,0 +1,39 @@
+1. What does a professional programmer usually do first to gain an understanding of a problem?
+The professional programmer gains understanding of a problem by working directly with the customer.
+
+2. How does pseudocode differ from actual code written in a programming language?
+a). pseudocode code is an informal language that allows programmers to focus more on the program's design,
+rather than the on the programming languages syntax rules.
+
+3. Computer programs typically perform what three steps?
+a). Input
+b). Process Input
+c). Output
+
+4. What rules and considerations should influence the names given to variables in a program?
+rules:
+a). cannot use Python key words.
+b). no spaces
+c). a-z, A-Z, or _ must be a first character
+d). case sensitive.
+
+considerations:
+a). choose names that give an indication of what they are used for.
+
+5. What is the difference between floating-point division and integer division?
+floating-point division returns a decimal value, while integer division returns an whole number.
+
+6. What is a magic number? Why are magic numbers problematic?
+A magic number is an unexplained value that appears in a program's code.
+They are problematic for three reasons:
+a). it is difficult for someone reading the code to determine the purpose of the magic number
+b). it takes laboriuos effort to change each instance of the value in a program
+c). a high risk of making mistakes, when typing the magic number in the program's code.
+
+7. Assume a program uses the named constant PI to represent the value 3.14159. The program uses the 
+named constant in several statements. What is the advantage of using the named constant instead 
+of the actual value 3.14159 in each statement?
+There are 3 advantages that come with using a named constant in your program:
+a). it make programs more self-explanatory.
+b). widespread changes can easily be made to the program.
+c). they help prevent typographical errors that are more common when using magic number.
