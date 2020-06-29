@@ -1,0 +1,20 @@
+True or False
+1. You can write any program using only sequence structures.
+TRUE
+
+2. A program can be made of only one type of control structure.
+    You cannot combine structures.
+FALSE
+
+3. A single alternative decision structure tests a condition 
+    and then takes one path if the condition is true, or 
+    another path if the condition is false.
+FALSE
+
+4. A decision structure can be nested inside another decision 
+    structure.
+TRUE
+    
+5. A compound Boolean expression created with the and operator 
+    is true only when both subexpressions are true.
+TRUE

@@ -1,0 +1,25 @@
+Short Answer
+
+1. Explain what is meant by the term “conditionally executed.”
+The action is 'conditionally executed' because it is performed
+only when a certain condition is true.
+
+2. Explain how a single alternative decision structure and a dual 
+    alternative decision structure differ.
+A single alternative decision structure has only on path if a condition is true.
+A dual alternative decision structure has two paths, one for true and one for false.
+
+3. Briefly describe how the and operator works.
+The and operator causes the boolean expression to be true
+if both its operands are true.
+
+4. Briefly describe how the or operator works.
+The or operator causes the boolean expression to be true
+if either of the subexpressions is true.
+
+5. When determining whether a number is outside a range, which logical 
+    operator is it best to use?
+or
+
+6. What is a flag and how does it work?
+A flag signals when some condition exisits in the program.
