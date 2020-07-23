@@ -23,3 +23,36 @@
 # 0 and 25, or the exam score is not between 0 and 50, 
 # the program should display an error message. Otherwise, 
 # the program should display the total points and the grade.
+
+# 1. prompts the user to enter their 
+#   points for both tests and the exam and converts 
+#   the values to integers.
+test_1_points = int(input("Enter points for test #1: "))
+
+if test_1_points >= 0 and test_1_points <= 25:
+    test_2_points = int(input("Enter points for test #2: "))
+
+    if test_2_points >= 0 and test_2_points <= 25:
+        exam_points   = int(input("Enter points for exam   : "))
+        
+        if exam_points >= 0 and exam_points <= 50:
+            total_points = test_1_points + test_2_points + exam_points
+
+            if total_points < 50 or exam_points < 25:
+                print("FAIL")
+
+            elif total_points >= 50 and exam_points >= 25:
+
+                if total_points > 80:
+                    print("Distinction")
+                elif total_points <= 80 and total_points >= 60:
+                    print("Credit")
+                elif total_points < 60 and total_points >= 50:
+                    print("Pass")
+
+        else:
+            print("Points for exam invalid.")
+    else:
+        print("Points for test #2 invalid.")
+else:
+    print("Points for test #1 invalid.")
