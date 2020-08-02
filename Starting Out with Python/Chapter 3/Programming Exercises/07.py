@@ -51,8 +51,8 @@ if test_1_points >= 0 and test_1_points <= 25:
                     print("Pass")
 
         else:
-            print("Points for exam invalid.")
+            print("Invalid. Points for exam must be between 0 - 50.")
     else:
-        print("Points for test #2 invalid.")
+        print("Invalid. Points for test #2 must be between 0 - 25.")
 else:
-    print("Points for test #1 invalid.")
+    print("Invalid. Points for test #1 must be between 0 - 25.")
