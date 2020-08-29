@@ -27,17 +27,17 @@ quarters *= QUARTER # quarters = quarters * QUARTERS
 
 total = pennies + nickels + dimes + quarters
 
-if_won_or_lost = ""
+outcome = ""
 
 if total == 1.00:
-    if_won_or_lost = "Won"
+    outcome = "Won"
 
 else:
-    if_won_or_lost = "Lost"
+    outcome = "Lost"
     if total > 1.00:
         print("The amount entered is greater than 1 dollar.")
     else:
         print("The amount entered is less than 1 dollar.")
 
-print("You", if_won_or_lost)
+print("You", outcome)
 print("Your total was", total)

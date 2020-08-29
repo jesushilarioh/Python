@@ -41,13 +41,12 @@ if test_1_points >= 0 and test_1_points <= 25:
             if total_points < 50 or exam_points < 25:
                 print("FAIL")
 
-            elif total_points >= 50 and exam_points >= 25:
-
+            else:
                 if total_points > 80:
                     print("Distinction")
                 elif total_points <= 80 and total_points >= 60:
                     print("Credit")
-                elif total_points < 60 and total_points >= 50:
+                elif total_points < 60:
                     print("Pass")
 
         else:

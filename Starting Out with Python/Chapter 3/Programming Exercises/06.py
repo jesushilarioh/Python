@@ -21,7 +21,7 @@ month = int(input('Enter the month from 1 thru 12: '))
 day = int(input('Enter the day from 1 thru 31: '))
 year = int(input('Enter the year: '))
 
-if (month * day) == year:
+if ((month * day) == year):
     print(month, '/', day, '/', year, ' IS magic.', sep='')
 else:
     print(month, '/', day, '/', year, ' IS NOT magic.', sep='')
