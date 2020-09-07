@@ -13,15 +13,22 @@
 # • If the number is not between 1 and 12, the program should display an error.
 
 user_month = int(input('Enter a month between 1 and 12: '))
+message = ""
 
-if user_month >= 1 and user_month <= 3:
-    print('Month', user_month, 'is in the first quarter.')
-elif user_month >= 4 and user_month <= 6:
-    print('Month', user_month, 'is in the second quarter.')
-elif user_month >= 7 and user_month <= 9:
-    print('Month', user_month, 'is in the third quarter.')
-elif user_month >= 10 and user_month <= 12:
-    print('Month', user_month, 'is in the fourth quarter.')
+if user_month < 1 or user_month > 12:
+    message = "Error. Month must be between 1 and 12.\n" + \
+              "Rerun program and try again."
 else:
-    print('Error. Month must be between 1 and 12.\n',
-          'Rerun program and try again.', sep='')
+    if user_month >= 1 and user_month <= 3:
+        message = "\nMonth " + format(user_month) + " is in the first quarter.\n"
+
+    elif user_month >= 4 and user_month <= 6:
+        message = "\nMonth " + format(user_month) + " is in the second quarter.\n"
+
+    elif user_month >= 7 and user_month <= 9:
+        message = "\nMonth " + format(user_month) + " is in the third quarter.\n"
+
+    elif user_month >= 10 and user_month <= 12:
+        message = "\nMonth " + format(user_month) + " is in the fourth quarter.\n"
+    
+print(message)

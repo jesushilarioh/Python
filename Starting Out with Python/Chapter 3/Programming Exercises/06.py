@@ -17,11 +17,19 @@
 # 1. asks the user to enter a 
 # month (in numeric form), a day, and a two-digit 
 # year.
-month = int(input('Enter the month from 1 thru 12: '))
+month = int(input('\nnter the month from 1 thru 12: '))
 day = int(input('Enter the day from 1 thru 31: '))
 year = int(input('Enter the year: '))
 
+message = '\n' + format(month) + '/' \
+            + format(day) + '/' \
+            + format(year) + \
+            ' IS '
+            
+# Valid month
 if ((month * day) == year):
-    print(month, '/', day, '/', year, ' IS magic.', sep='')
+    message += 'magic.'
 else:
-    print(month, '/', day, '/', year, ' IS NOT magic.', sep='')
+    message += 'NOT magic.'
+
+print(message + '\n')

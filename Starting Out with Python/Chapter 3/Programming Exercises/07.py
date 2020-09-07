@@ -27,7 +27,9 @@
 # 1. prompts the user to enter their 
 #   points for both tests and the exam and converts 
 #   the values to integers.
-test_1_points = int(input("Enter points for test #1: "))
+test_1_points = int(input("\nEnter points for test #1: "))
+
+message = ""
 
 if test_1_points >= 0 and test_1_points <= 25:
     test_2_points = int(input("Enter points for test #2: "))
@@ -39,19 +41,21 @@ if test_1_points >= 0 and test_1_points <= 25:
             total_points = test_1_points + test_2_points + exam_points
 
             if total_points < 50 or exam_points < 25:
-                print("FAIL")
+                message = "FAIL"
 
             else:
                 if total_points > 80:
-                    print("Distinction")
+                    message = "Distinction"
                 elif total_points <= 80 and total_points >= 60:
-                    print("Credit")
+                    message = "Credit"
                 elif total_points < 60:
-                    print("Pass")
+                    message = "Pass"
 
         else:
-            print("Invalid. Points for exam must be between 0 - 50.")
+            message = "Invalid. Points for exam must be between 0 - 50."
     else:
-        print("Invalid. Points for test #2 must be between 0 - 25.")
+        message = "Invalid. Points for test #2 must be between 0 - 25."
 else:
-    print("Invalid. Points for test #1 must be between 0 - 25.")
+    message = "Invalid. Points for test #1 must be between 0 - 25."
+
+print("\n" + message + "\n\n")

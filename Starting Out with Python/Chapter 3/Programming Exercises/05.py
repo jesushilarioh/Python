@@ -17,9 +17,15 @@ mass = float(input('Enter an object\'s mass: '))
 
 weight = mass * 9.8
 
+message = "\nThe object"
+
 if weight < 100:
-    print('The object is too light at', format(weight, ',.2f'), 'newtons.')
+    message += ' is too light at ' + format(weight, ',.2f') + ' newtons.'
+
 elif weight >= 100 and weight <= 500:
-    print('The object\'s weight at', format(weight, ',.2f'), 'is just right.')
+    message += '\'s weight at ' + format(weight, ',.2f') + ' is just right.'
+
 elif weight > 500:
-    print('The object is too heavy at', format(weight, ',.2f'), 'newtons.')
+    message += ' is too heavy at ' + format(weight, ',.2f') + ' newtons.'
+
+print(message, end="\n\n")
