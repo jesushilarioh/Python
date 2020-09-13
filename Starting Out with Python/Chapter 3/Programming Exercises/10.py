@@ -27,17 +27,17 @@ quarters *= QUARTER # quarters = quarters * QUARTERS
 
 total = pennies + nickels + dimes + quarters
 
-outcome = ""
+message = ""
 
 if total == 1.00:
-    outcome = "Won"
+    message = "You Won! The amount entered equals 1 dollar."
 
 else:
-    outcome = "Lost"
-    if total > 1.00:
-        print("The amount entered is greater than 1 dollar.")
-    else:
-        print("The amount entered is less than 1 dollar.")
+    message = "You Lost! "
 
-print("You", outcome)
-print("Your total was", total)
+    if total > 1.00:
+        message += "The amount entered is greater than 1 dollar."
+    else:
+        message += "The amount entered is less than 1 dollar."
+
+print(message)

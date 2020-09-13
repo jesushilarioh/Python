@@ -16,24 +16,28 @@
 
 number_of_books = int(input("Enter the number of books: "))
 
+message = ""
+
 if number_of_books < 0:
-    print("Error. Enter a positive number. Re-run program and try again.")
+    message = "Error. Enter a positive number. \nRe-run program and try again."
 else:
-    point_earned = 0
+    message = "You are awared "
 
     if number_of_books >= 0 and number_of_books <= 1:
-        point_earned = 0
+        message += "0 "
 
     elif number_of_books >= 2 and number_of_books <= 3:
-        point_earned = 5
+        message += "5 "
 
     elif number_of_books >= 4 and number_of_books <= 5:
-        point_earned = 15
+        message += "15 "
 
     elif number_of_books >= 6 and number_of_books <= 7:
-        point_earned = 30
+        message += "30 "
 
     elif number_of_books >= 8:
-        point_earned = 60
+        message += "60 "
 
-    print("You're awared", point_earned, "points.")
+    message += "points."
+
+    print(message)
