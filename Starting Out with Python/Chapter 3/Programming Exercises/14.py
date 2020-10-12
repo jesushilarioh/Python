@@ -25,12 +25,14 @@ message = "Your weight is considered "
 BMI = (weight * (703 / (height**2)))
 
 if BMI >= 18.5 and BMI <= 25:
-    message += "optimal weight."
+    message += "optimal weight"
 
 elif BMI < 18.5:
-    message += "underweight."
+    message += "underweight"
 
 elif BMI > 25:
-    message += "overweight."
+    message += "overweight"
 
-print(message + "@ BMI = " + format(BMI, ',.2f'))
+message += " @ BMI = " + format(BMI, ',.2f')
+
+print(message)

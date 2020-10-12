@@ -32,4 +32,6 @@ elif weight_of_package > 6 and weight_of_package <= 10:
 elif weight_of_package > 10:
     shipping_charges = weight_of_package * 4.75
 
-print(message + "$" + format(shipping_charges, ',.2f'))
+message += "$" + format(shipping_charges, '.2f')
+
+print(message)
