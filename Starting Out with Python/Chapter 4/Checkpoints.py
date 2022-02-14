@@ -113,15 +113,36 @@ print(number2)  # 5
 # 4.17 Rewrite the following statements using augmented assignment operators:
 print('\n4.17')
 print('------')
+
 # a) quantity = quantity + 1 
 quantity = 0
+print('quantity =', quantity)
 quantity += 1
+print('quantity =', quantity)
+
 # b) days_left = days_left - 5 
 days_left = 0
+print('days_left =', days_left)
 days_left =- 5
+print('days_left =', days_left)
+
 # c) price = price * 10
-price = 0
+price = 1
+print('price =', price)
 price *= 10
+print('price =', price)
+
 # d) price = price / 2
 price /= 2
+print('price =', price)
 
+# 4.18 
+# What is a sentinal?
+# A sentinel is a special value that marks the end of a sequence
+# of items.
+
+# 4.19
+# Why should you take care to choose a distinctive value
+# as a sentinel?
+# A sentinel value must be distinctive enough that it will not
+# be mistaken as a regular value in the sequence.
