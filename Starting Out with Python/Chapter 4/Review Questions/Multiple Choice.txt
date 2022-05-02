@@ -1,0 +1,12 @@
+1. A CONDITION - controlled loop uses a true/false condition to control the number of times that it repeats.
+2. A COUNT - controlled loop repeats a specific number of times.
+3. Each repetition of a loop is known as a(n) ITERATION.
+4. The while loop is a PRETEST type of loop. 
+5. A(n) INFINATE loop has no way of ending and repeats until the program is intertupted.
+6. The -= operator is an example of a(n) AUGMENTED ASSIGNMENT operator. 
+7. A(n) ACCUMULATOR variable keeps a running total. 
+8. A(n) SENTINEL is a special value that signals when there are no more items from a list of items to be processed. This value cannot be mistaken as an item from the list. 
+9. GIGO stands for GARBAGE IN, GARBAGE OUT. 
+10. The integrity of a program's output is only as good as the integrity of the program's INPUT. 
+11. The input operation that appears just before a validation loop is known as the PRIMING READ. 
+12. Validation loops are also known as ERROR TRAPS. 

@@ -1,0 +1,13 @@
+1. What is a condition-controlled loop? A condition-controlled loop is a loop that is controlled by a true/false condition (boolean expression).
+2. What is a count-controlled loop? A count-controlled loop is a loop that repeats a specific number of times. 
+3. What is an infinite loop? Write the code for an infinite loop. An infinite loop is a loop the has no way of stopping. 
+
+k = 10 
+while(k = 10)
+    print("hello");
+
+4. How are an accumulator variable and a loop used to calculate a running total? The accumulator variable accumulates by 1 for each loop iteration, therefore keeping a running total. 
+5. How many iterations would occur in total if a loop that repeats 5 times is nested within a loop that repeats 4 times? 20 times. 
+6. Why must the value chosen for use as a sentinel be carefully selected? A sentinel value must be carefully selected because it may be mistaken as a regular value in a sequence.
+7. What does the phrase "garbage in, garbage out" mean? If the user enters bad data, then the program will return bad data; This is refered to GIGO.
+8. Give a general description of the input validation process. The program reads the users input and anaylizes that input to see if that input is correct input. Then the program proceeds to process that input, so as to output good informational data. 
