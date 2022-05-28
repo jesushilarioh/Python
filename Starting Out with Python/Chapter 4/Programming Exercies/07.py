@@ -7,6 +7,9 @@
 # period. The output should be displayed in a dollar amount, not the number of pennies.
 #
 #
+pennies = 0
+
+
 
 
 
