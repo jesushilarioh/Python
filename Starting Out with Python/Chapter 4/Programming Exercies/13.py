@@ -25,3 +25,8 @@
 #   10              21.209
 #
 #
+
+starting_number_of_organisims = int(input("Starting number of organisms: "))
+average_daily_increase = float(input("Average daily increase: "))
+number_of_days_to_multiply = int(input("Number of days to multiply: "))
+
