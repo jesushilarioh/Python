@@ -26,7 +26,31 @@
 #
 #
 
-starting_number_of_organisims = int(input("Starting number of organisms: "))
+import poplib
+from tracemalloc import start
+
+
+starting_number_of_organisims = int(input("\nStarting number of organisms: "))
+
 average_daily_increase = float(input("Average daily increase: "))
+average_daily_increase /= 100
+
 number_of_days_to_multiply = int(input("Number of days to multiply: "))
 
+output = "\nDay Approx.\tPopulation\n" + \
+         "-----------------------------------\n"
+
+population = starting_number_of_organisims
+
+for day in range(number_of_days_to_multiply):
+
+    if day == 0:
+        output += format(day + 1) + "\t\t" + format(population, '.4f') + "\n"
+
+    else:
+        population += (population * average_daily_increase)
+        output += format(day + 1) + "\t\t" + format(population, '.4f') + "\n"
+
+output += "-----------------------------------\n"
+
+print(output)

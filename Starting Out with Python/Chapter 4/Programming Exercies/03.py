@@ -10,11 +10,12 @@
 
 fastestLapTime = 0.0
 slowestLapTime = 0.0
-averageLapTime = 0.0
-userLapTime = 0.0
-totalLapTime = 0.0
+userLapTime    = 0.0
+totalLapTime   = 0.0
 
+numberAroundTrack = int(input("How many times around the track? "))
 
+<<<<<<< HEAD
 # 1. asks the user to enter the number
 # of times that they have run around a racetrack
 numberAroundTrack = int(input("How many times around track? "))
@@ -22,23 +23,32 @@ numberAroundTrack = int(input("How many times around track? "))
 
 # 2. uses a loop to prompt them to enter the lap time for
 # each of their laps.
+=======
+>>>>>>> b6b5cf3aa399077fb4a10f86af137b2e43eac569
 for lapTime in range(numberAroundTrack):
 
     userLapTime = float(input("Enter lap time for lap #" + format(lapTime + 1) + " "))
 
+<<<<<<< HEAD
     if lapTime == 0:
         slowestLapTime = fastestLapTime = userLapTime
+=======
+    while userLapTime < 0:
+        userLapTime = float(input("Error. Enter a positive number: "))
+>>>>>>> b6b5cf3aa399077fb4a10f86af137b2e43eac569
 
     if userLapTime > fastestLapTime:
         fastestLapTime = userLapTime
-        
-    if userLapTime < slowestLapTime:
+    
+    if lapTime == 0:
+        slowestLapTime = userLapTime
+
+    elif userLapTime < slowestLapTime:
         slowestLapTime = userLapTime
 
     totalLapTime += userLapTime
 
 averageLapTime = totalLapTime / numberAroundTrack
-
 
 # 3.  When the loop finishes, the program 
 # should display the time of their fastest lap, the time of
