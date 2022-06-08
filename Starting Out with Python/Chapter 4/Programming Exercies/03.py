@@ -15,6 +15,9 @@ totalLapTime   = 0.0
 
 numberAroundTrack = int(input("How many times around the track? "))
 
+while numberAroundTrack < 0:
+    numberAroundTrack = int(input("Error. Enter a positive number: "))
+
 for lapTime in range(numberAroundTrack):
 
     userLapTime = float(input("Enter lap time for lap #" + format(lapTime + 1) + " "))
@@ -36,9 +39,6 @@ for lapTime in range(numberAroundTrack):
 
 averageLapTime = totalLapTime / numberAroundTrack
 
-# 3.  When the loop finishes, the program 
-# should display the time of their fastest lap, the time of
-# their slowest lap, and their average lap time.
 output = "\nFastest lap      = " + format(fastestLapTime) + "\n"  \
          "Slowest lap      = " + format(slowestLapTime) + "\n"  \
          "Average lap time = " + format(averageLapTime) + ".\n"

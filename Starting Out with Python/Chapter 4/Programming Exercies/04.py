@@ -21,19 +21,23 @@
 # 3         120
 #  
 
-# 1. asks the user for the speed of a vehicle (in miles per hour)
-# and the number of hours it has traveled.
-speed = int(input("Enter the speed: "))  
-hour = int(input("Enter hours traveled: "))  
+speed = int(input("\nEnter the speed: "))  
+while speed < 0:
+      speed = int(input("Error: Enter a positive number: "))  
+      
+hours = int(input("Enter hours traveled: "))  
+while hours < 0:
+      hours = int(input("Error: Enter a positive number: "))  
+      
 distance = 0
 
-# 2. use a loop
-# to display the distance the vehicle has traveled for each
-# hour of that time period.
-print("Hour     Distance Traveled\n"  \
-      "--------------------------")
+output = "\nHour     Distance Traveled\n"  \
+         "--------------------------\n"
       
-for num in range(hour):
-    distance = speed * (num + 1)
-    print(format(num + 1) + "       " + format(distance))
+for hour in range(hours):
+    distance = speed * (hour + 1)
 
+    output += format(hour + 1) + "       " + \
+              format(distance) + "\n"
+
+print(output)
