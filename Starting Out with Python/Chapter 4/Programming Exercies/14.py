@@ -18,6 +18,7 @@ output = "\n"
 for rows in range(SIZE, 0, -1):
 
     for columns in range(rows):
+        
         output += "#"
     
     output += "\n"

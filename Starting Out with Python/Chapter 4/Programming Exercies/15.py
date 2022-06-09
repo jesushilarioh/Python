@@ -17,7 +17,7 @@ output = "\n"
 for row in range(SIZE):
     output += "#"
     
-    for column in range(row + 1):
+    for column in range(row):
         output += " "
 
     output += "#\n"
