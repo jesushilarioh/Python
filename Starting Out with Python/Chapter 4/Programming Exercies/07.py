@@ -21,13 +21,8 @@ day_pay = 0.0
 
 for day in range(number_of_days):
 
-    if (day == 0): 
-        day_pay = pennies
-        output += format(day + 1) + "\t$" + format(day_pay, '.2f') + "\n"
-        
-    else: 
-        day_pay = pennies
-        output += format(day + 1) + "\t$" + format(day_pay, '.2f') + "\n"
+    day_pay = pennies
+    output += format(day + 1) + "\t$" + format(day_pay, '.2f') + "\n"
         
     total_pay += day_pay
     
