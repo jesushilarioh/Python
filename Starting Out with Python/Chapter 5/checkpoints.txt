@@ -1,0 +1,37 @@
+5.1 What is a function?
+A function is a group of statements that exist within a program for the purpose of performing a specific task.
+
+5.2 What is meant by the phrase "divide and conquer"?
+It is meant when a large task is divided into several smaller tasks that are easily performed.
+
+5.3 How do functions help you reuse code in a program?
+If a specific operation is performed in several places in a program, a function can be written once to perform that operation, then be executed any time it is needed. 
+
+5.4 How can functions make the development of multiple programs faster?
+Functions can be written for the commonly needed tasks, and those functions can be incorporated into each program that needs them.
+
+5.5 How can functions make it easier for programs to be developed by teams of programmers?
+When a program is developed as a set of functions that each performs an individual task, then different programmers can be assigned the job of writing different functions.
+
+5.6 A function definition has what two parts?
+a. The function header
+b. The function block
+
+5.7 What does the phrase “calling a function” mean?
+Calling a function means to execute a function.
+
+5.8 When a function is executing, what happens when the end of the function’s block is reached?
+The function returns, allowing the interpreter to jump back to the part of the program that called the function, and the program resumes it's execution at that point. 
+
+5.9 Why must you indent the statements in a block?
+An error will occur if you do not. 
+
+5.10 What is a local variable? How is access to a local variable restricted?
+A local variable belongs to the function in which it is created, and only statements inside that function can access the variable.
+
+5.11 What is a variable’s scope?
+A variable's scope is the part of a program in which the variable may be accessed. Further, a variable is visible only to statements in the variable's scope. A local variable's scope is the function in which the variable is created.
+
+5.12 Is it permissible for a local variable in one function to have the same name as a local variable in a different function?
+Because a function's local variables are hidden from other functions, the other functions may have their own local variables with the same name.
+
