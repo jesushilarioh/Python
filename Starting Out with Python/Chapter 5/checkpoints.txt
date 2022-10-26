@@ -35,3 +35,29 @@ A variable's scope is the part of a program in which the variable may be accesse
 5.12 Is it permissible for a local variable in one function to have the same name as a local variable in a different function?
 Because a function's local variables are hidden from other functions, the other functions may have their own local variables with the same name.
 
+5.13 What are the pieces of data that are passed into a function called?
+An argument is any piece of data that is passed into a function when the function is called.
+
+5.14 What are the variables that receive pieces of data in a function called?
+A PARAMETER is a variavble that receives an argument (pieces of data) that is passed into a function.
+
+5.15 What is a parameter variable’s scope?
+A PARAMETER VARIABLE'S SCOPE is a function in which the parameter is used.
+
+5.16 When a parameter is changed, does this affect the argument that was passed into the parameter?
+Any changes made to the parameter variable will not affect the argument.
+
+5.17 The following statements call a function named show_data. Which of the statements passes arguments by position, and which passes keyword arguments? 
+a. show_data(name='Kathryn', age=25) This on passes keyword arguments
+b. show_data('Kathryn', 25) This one passes arguments by position
+
+5.18 What is the scope of a global variable?
+A global variable is accessible to all the functions in a program file.
+
+5.19 Give one good reason that you should not use global variables in a program.
+a. Global variables make debugging difficult.
+b. Functions that use global variables are usually dependent on those variables.
+c. Global variables make a program hard to understand.
+
+5.20 What is a global constant? Is it permissible to use global constants in a program?
+Although you should try to avoid the use of global variables, it is permissible to use global constants in a program.
