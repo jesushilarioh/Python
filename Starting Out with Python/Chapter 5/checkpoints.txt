@@ -61,3 +61,82 @@ c. Global variables make a program hard to understand.
 
 5.20 What is a global constant? Is it permissible to use global constants in a program?
 Although you should try to avoid the use of global variables, it is permissible to use global constants in a program.
+
+5.21 How does a value-returning function differ from the void functions?
+A value-returning function returns a value back to the part of the program that called it.
+
+5.22 What is a library function?
+A library function is a pre-written standard library function that is provided by python.
+
+5.23 Why are library functions like “black boxes”?
+Library functions are like 'black boxes' because you don't see the internal workings of them.
+
+5.24 What does the following statement do?
+x = random.randint(1, 100)
+It assigns a random number within the range of 1 to 100 to the variable x.
+
+
+5.25 What does the following statement do?
+print(random.randint(1, 20))
+It prints a random number within the range of 1 to 20.
+
+
+5.26 What does the following statement do?
+print(random.randrange(10, 20))
+It prints a random number in th range of 10 up to, but not including 20.
+
+
+5.27 What does the following statement do?
+print(random.random())
+It prints a floating-point number in the range of 0.0 up to 1.0 (but not including 1.0).
+
+
+5.28 What does the following statement do?
+print(random.uniform(0.1, 0.5))
+It prints a random floating-point number in the range of 0.1 through 0.5.
+
+
+5.29 When the random module is imported, what does it use as a seed value for
+random number generation?
+It uses the system time from the computer's internal clock as a seed value for random number generation.
+
+
+5.30 What happens if the same seed value is always used for generating random numbers?
+If the same seed value were always used, the random number functions would always generate the same series of pseudorandom numbers.
+
+
+5.31 What is the purpose of the return statement in a function?
+To return a value to it's call. The return statement returns a value back to the part of the program that called it.
+
+
+5.32 Look at the following function definition:
+def do_something(number): return number * 2
+a. What is the name of the function?
+The name of the function is do_something.
+
+
+b. What does the function do?
+The function returns it's argument multiplied by 2.
+
+
+c. Given the function definition, what will the following statement display?
+print(do_something(10))
+The statement will print '100'.
+
+
+5.33 What is a Boolean function?
+A boolean function return a true/false value.
+
+
+5.34 What import statement do you need to write in a program that uses the math module?
+import math
+
+
+5.35 Write a statement that uses a math module function to get the square root of 100
+and assigns it to a variable.
+square_root = math.sqrt(100)
+
+
+5.36 Write a statement that uses a math module function to convert 45 degrees to radians and assigns the value to a variable.
+toRadians = math.radians(45)
+
