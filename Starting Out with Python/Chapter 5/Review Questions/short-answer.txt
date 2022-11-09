@@ -1,0 +1,41 @@
+1. How do functions help facilitate teamwork?
+When a program is developed as a set of functions that each performs an individual task, then different programmers can be assigned the job of writing different functions.
+
+2. Name and describe the two parts of a function definition.
+a. the function header marks the beginning of a function definition.
+b. A block is simply a set of statements that  perform anytime the function is exicuted.
+
+3. When a function is executing, what happens when the end of the function block is reached?
+When the end of the function block is reached, the interpreter jumps back to the part of the program that called the function.
+
+4. What is a local variable? What statements are able to access a local variable?
+A local variable is created inside a function and cannot be accessed by statements that are outside the function.
+
+5. What scope do parameter variables have?
+A parameter variable's scope is the function in which the parameter is used.
+
+6. Why do global variables make a program difficult to debug?
+Any statement in a program file can change the value of a global variable, you have to track down every statement that accesses it to determine where the bad value is coming from. In a program with thousnads of lines of code, this can be difficult.
+
+7. Suppose you want to select a random number from the following sequence:
+0, 5, 10, 15, 20, 25, 30
+What library function would you use?
+randrange() from the random function
+
+8. What statement do you have to have in a value-returning function?
+you need to have a return statment to return a value back to the function call.
+
+9. Draw an IPO chart that documents the input, processing, and output of the built-in input function.
+
+10. What is a Boolean function?
+a boolean function is a function that return a true/false value.
+
+11. What are the advantages of breaking a large program into modules?
+large programs are easier to debug and maintain when they are divided into modules.
+
+it maks the program  easier to understand, test, and maintain.
+
+you can reuse the same code in other programs that may need the same function.
+
+
+

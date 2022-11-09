@@ -1,0 +1,47 @@
+
+1. The phrase “divide and conquer” means that all of the programmers on a team should be divided and work in isolation.
+FALSE: divide and conquer means when a large task is divided into several smaller tasks that are easily performed
+
+2. Functions make it easier for programmers to work in teams.
+TRUE
+
+3. Function names should be as short as possible.
+FALSE: a function's name should be descriptive enough so anyone reading your code can reasonably guess what the function does.
+
+4. Calling a function and defining a function mean the same thing.
+FALSE: A function definition spcifies a what a function does, but it does not cause the function to execute. To execute a function, you must call it.
+
+5. A flowchart shows the hierarchical relationships between functions in a program.
+FALSE: A hierarchy chart or structure chart gives a visual representation of the relationships between functions.
+
+6. A hierarchy chart does not show the steps that are taken inside a function.
+TRUE
+
+7. A statement in one function can access a local variable in another function.
+FALSE: A variable is visible only to statements in the variable's scope.
+
+8. In Python, you cannot write functions that accept multiple arguments.
+FALSE: multiple parameters written as part of a function are often referred to as a parameter list.
+
+9. In Python, you can specify which parameter an argument should be passed into a function call.
+TRUE 
+
+10. You cannot have both keyword arguments and non-keyword arguments in a function call.
+FALSE: It is possible to mix positional arguments and keyword arguments in a function call, but the positional arguments must appear first, followed by the keyword arguments.
+
+11. Some library functions are built into the Python interpreter.
+TRUE
+
+12. You do not need to have an import statement in a program to use the functions in the random module.
+FALSE: To use the random functions in the random module, the import random statement must be used.
+
+13. Complex mathematical expressions can sometimes be simplified by breaking out part of the expression and putting it in a function.
+TRUE 
+
+14. A function in Python can return more than one value.
+TRUE 
+
+15. IPO charts provide only brief descriptions of a function’s input, processing, and output, but do not show the specific steps taken in a function.
+FALSE: the IPO describes the input, processing, and output of a function.
+
+
