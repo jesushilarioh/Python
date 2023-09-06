@@ -21,10 +21,10 @@
 
 def main():
     for count in range(10):
-        print(f"{falling_distance(count + 1):,.2f}")
+        print(f"{count + 1}: {falling_distance(count + 1):,.2f}")
 
 def falling_distance(t):
     G = 9.8
-    return (1/2) * (G * pow(t, 2))
+    return (1/2) * (G * (pow(t, 2)))
 
 main()
